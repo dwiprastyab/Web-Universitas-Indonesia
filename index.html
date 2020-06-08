@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home | Universitas Indonesia</title>
+    <link rel= "stylesheet" href="assets/styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<style>
+     .container {
+           display: flex;
+ 
+           /* Properti lainnya */
+           width: 100%;
+           height: 100%;
+           background-color: transparent;
+           padding: 20px;
+           border-radius: 10px;
+           margin: 0 auto;
+       }
+       .box {
+           flex-grow: 1;
+ 
+           /* properti lainnya */
+           background-color: transparent;
+           margin: 5px;       
+           border-radius: 10px;
+       }
+       .box li {
+           margin-left: 25%;
+           margin-top: 2%;
+       }
+</style>
+
+<body>   
+    <header>
+        <nav>  
+            <div>            
+            <img src="assets/image/logo.png" style="width: 200px;">
+            </div>
+            <ul style="margin-top: 20px;">
+                <li><a href="#">Beranda</a></li>          
+                <li><a href="#tentang">About UI</a></li>          
+                <li><a href="#akademik">Akademik</a></li>          
+                <li><a href="#kontak">Kontak</a></li>          
+            </ul>
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>          
+        </nav>
+    </header>
+        <div>
+            <img style="height: 600px;" src="assets/image/ui.jpg" id="imgJumbotron">
+        </div>
+    <main>
+    <div id="content">           
+        <article id="tentang" class="card">
+            <div>
+                <h2 id="tentang"> About Universitas Indonesia </h2>
+                <br>
+                <img src="assets/image/about.png" class="featured-image" >
+                <br>             
+                <p id="first">
+                    Sebelum kampus Universitas Indonesia di Depok dibangun pada 1987, Universitas Indonesia memiliki tiga lokasi kampus yaitu di Salemba, Pegangsaan Timur dan Rawamangun. Setelah kampus baru  didirikan di lahan seluas 320 hektare di Depok, kampus Rawamangun yang mencakup beberapa fakultas dipindah, sementara kampus Salemba masih dipertahankan untuk Fakultas Kedokteran, Fakultas Kedokteran Gigi dan Program Pascasarjana. Tidak lama setelah tahun 2000, Universitas Indonesia menjadi satu dari beberapa universitas yang mempunyai status  Badan Hukum Milik Negara di Indonesia. Perubahan status ini membawa perubahan yang signifikan untuk Universitas Indonesia yaitu otonomi yang lebih besar dalam pengembangan akademis dan pengelolaan keuangan.
+                    <cite>(sumber : <a href="https://www.ui.ac.id/tentang-ui/sejarah.html" target="_blank">Universitas Indonesia | Sejarah</a>)</cite></p>
+                <div style="margin-top: 10px;" class="card2">
+                    <h2 id="tentang"> Visi Universitas Indonesia</h2>
+                <p id="first">
+                    “Menjadi pusat ilmu pengetahuan, teknologi, dan kebudayaan yang unggul dan berdaya saing, melalui upaya mencerdasakan kehidupan bangsa untuk meningkatkan kesejahteraan masyarakat, sehingga berkontribusi bagi pembangunan masyarakat Indonesia dan dunia”
+                </p>                          
+                <h2 style="margin-top: 10px;" id="tentang"> Misi Universitas Indonesia</h2>
+                <ul style="margin-left:2%;">
+                    <li>Menyediakan akses yang luas dan adil, serta pendidikan dan pengajaran yang berkualitas.</li>
+                    <li>Menyelenggarakan kegiatan Tridharma yang bermutu dan relevan dengan tantangan nasional serta global.</li>
+                    <li>Menciptakan lulusan yang berintelektualitas tinggi, berbudi luhur dan mampu bersaing secara global.</li>
+                    <li>enciptakan iklim akademik yang mampu mendukung perwujudan visi UI.</li>
+                </ul>                
+        </div>
+        </div>
+        </article>        
+        <article id="akademik" class="card">
+            <h2 id="tentang"> Akademik </h2>
+            <img style="margin-top: 20px" src="assets/image/akademik.png" class="featured-image" >
+            <br>
+            <div class="container">
+                <div class="box">
+                    <h3 style="text-align: center; color: black;"><img src="assets/image/hat.png" class="hat"> Fakultas Desain dan Seni Kreatif</h3>
+                    <br>
+                    <ul>
+                        <li>Desain Komunikasi Visual</li>
+                        <li>Desain Produk</li>
+                        <li>Desain Interior</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3 style="text-align: center; color: black;"><img src="assets/image/hat.png" class="hat"> Fakultas Ekonomi dan Bisnis</h3>
+                    <br> 
+                    <ul>
+                        <li>D3 Akutansi</li>
+                        <li>D3 Manajemen</li>
+                        <li>S1 Akutansi</li>
+                        <li>S1 Manajemen</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3 style="text-align: center; color: black;"><img src="assets/image/hat.png" class="hat"> Fakultas Teknik</h3>
+                    <br>
+                    <ul>
+                        <li>Teknik Sipil</li>
+                        <li>Teknik Industri</li>
+                        <li>Teknik Arsitektur</li>
+                        <li>Teknik Elektro</li>
+                        <li>Teknik Mesin</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <h3 style="text-align: center; color: black;"><img src="assets/image/hat.png" class="hat"> Fakultas Ilmu Komunikasi</h3>
+                    <br>
+                    <ul>
+                        <li>Ilmu Komunikasi</li>
+                        <li>Public Relations</li>
+                        <li>Broadcasting</li>
+                        <li>Digital Communication</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3 style="text-align: center; color: black;"><img src="assets/image/hat.png" class="hat"> Fakultas Ilmu Komputer</h3>
+                    <br>
+                    <ul>
+                        <li>Teknik Informatika</li>
+                        <li>Sistem Informasi</li>                        
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3 style="text-align: center; color: black;"><img src="assets/image/hat.png" class="hat"> Fakultas Psikologi</h3>
+                    <br>
+                    <ul>
+                        <li style="margin-left:35%;">Psikologi</li>
+                    </ul>
+                </div>
+             </div>   
+        </article>             
+        <article class="card">
+        <div style="text-align: center; background-color: #FFCD02;" >
+            <br>
+            <h3>
+            Seleksi Masuk
+            </h3>
+            <h1 style="color:white; font-size: xx-large;">
+                UNIVERSITAS INDONESIA
+            </h1>
+            <h3>
+                Tahun 2020/2021
+            </h3>
+            <a href="https://www.ui.ac.id/pengantar-pendaftaran/seleksi-masuk-ui.html"><button class="btnGabung" style="height: 30px; background-color: white; color: rgb(44, 40, 40); width: 15%; font-size: large; border-radius: 10px; margin-top: 2%; border: none;">Daftar</button></a>
+            <br>
+            <br>
+        </div>
+        </article>
+        <article id="kontak" class="card">
+            <h2 id="kontak"> Hubungi Kami  </h2>
+            <img style="margin-top: 20px;" src="assets/image/contactui.png" id="imgJumbotron">
+            
+        </article>
+
+        <article id="Info" class="card">
+            <h2>Daftar Mahasiswa Terbaik Tahun 2020</h2>
+            <div style="display: flex;">
+                <div class="card bio">
+                    <img style="width: 100%; flex-grow: 1; border-radius: 30px;" src="assets/image/dwi.jpg" alt="Profile Mahasiswa Terbaik">
+                   </div>
+                <div style="flex-grow: 7;" class="card bio">
+                    <div>
+                        <h2>Dwi Prastya Baskoro</h2>                        
+                        <h4 style="color: #FFCD02;">Teknik Informatika</h4>
+                        <p id="detail">Pemuda kelahiran Jakarta ini telah memenangkan penghargaan dalam program penelitian dan pengembangan AI (Artificial Intelligence) untuk memprediksi gejala pada pasien COVID-19 menggunakan Face Recognition pada Deep Learning. Penelitian ini pun mendapat respon baik sehingga Dwi mendapatkan penghargaan Habibie Award tahun 2020 atas penelitiannya ini. </p>    
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+        <aside>
+            <article class="profile card">
+            <header>
+            <h2>Universitas Indonesia</h3>
+            <br>
+                <figure>
+                    <img src="assets/image/beasiswa.png">
+                    <br>
+                    <br>
+                    <figcaption>Intelligence to Face the world </figcaption>
+                <a href="http://eng.ui.ac.id/blog/category/beasiswa/"><button style="margin-top: 10px; height: 30px; border: none; background-color: yellow; color: rgb(44, 40, 40); width: 40%; font-size: large; border-radius: 10px; margin-top: 2%;">Daftar</button></a>
+            </figure>
+
+                <br>
+                <br>
+           
+            </header>
+        </article>
+        </aside>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
+    </main>
+
+    <footer>
+        <p>Dasar Pemrograman Web &#169; 2020, Dicoding Academy | | Dwi Prastya</p>
+    </footer>
+     <!-- <a href="http://www.freepik.com">Designed by upklyak / Freepik</a> tribute for the picture--> 
+     <!-- https://www.flaticon.com/ -->
+</body>
+</html>
+
+<script src="assets/js/script.js"></script>
+<script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+    

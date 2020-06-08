@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins';
+    font-size: medium;
+    overflow-x: hidden;
+    }
+
+    #imgJumbotron{
+        width: 100%;
+        max-height: 100%;
+        object-fit : cover;
+        object-position: center;
+    }
+    
+nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: white;
+    position: sticky;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color:black;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color:#FFCD02;
+}
+
+.menu-toggle input{
+    position:absolute;
+    width:40px;
+    height: 28px;
+    left:-5px;
+    top:-3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+
+}
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 1s;
+
+}
+
+/* humberger */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px,-1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px,0);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+@media screen and (max-width:1000px){
+    nav ul{
+        width: 40%;
+
+    }
+}
+
+@media screen and (max-width:768px){
+    nav ul{
+        width: 50%;
+
+    }
+}
+/* ukuran mobile */
+@media screen and (max-width:576px){   
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top:0;
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        background-color:  #FFCD02 ;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    
+    .btnGabung{
+        
+        display: none;
+    }
+    #detail {
+        display: none;
+    }
+}
+
+nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+  
+header {
+    display: inline;
+
+}
+
+main{
+    padding: 20px;
+    overflow: auto;
+}
+
+h2 {
+    color: #FFCD02
+}
+
+h3{
+    color: white
+}
+
+h4{
+    color: white
+}
+
+p#first{
+    text-indent: 2em;
+    text-align: justify;
+    word-spacing: normal;
+}
+
+.featured-image{
+    width: 100%;
+    max-height: 500px;
+    object-fit : cover;
+    object-position: center;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 250px;
+    
+}
+
+
+/* Setting pada Profile aside */
+
+
+.profile header{
+    text-align: center;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside{
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+* {
+    box-sizing : border-box;
+
+}
+
+@media screen and (max-width : 1000px){
+    #content,
+    aside{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+table{
+    font-family: 'Quidcksand', sans-serif;
+    font-size: small;
+    text-align: left;
+}
+
+
+/* setting pada Footer*/
+footer {
+    padding: 20px;
+    color: rgb(83, 81, 81);
+    background-color:#FFCD02;
+    text-align: left;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.hat{
+    width: 10%;
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #FFCD02;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(132, 248, 121);
+  }
+
+
